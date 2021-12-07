@@ -1,9 +1,3 @@
-%===============================================================================
-% Name   : R noweb template
-% Author : Sarah Modesto Sanches 
-% Date   : 12/11/2021 10:50:10
-%===============================================================================
-
 \documentclass[12pt]{article}\usepackage[]{graphicx}\usepackage[]{color}
 % maxwidth is the original width if it is less than linewidth
 % otherwise use linewidth (to make sure the graphics do not exceed the margin)
@@ -28,7 +22,7 @@
 \newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
 \newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
 \let\hlipl\hlkwb
-
+\usepackage{adjustbox}
 \usepackage{framed}
 \makeatletter
 \newenvironment{kframe}{%
@@ -169,18 +163,18 @@
     \toprule
    & Class limits & f & rf & rf(\%) & cf & cf(\%) \\ 
     \midrule
-  1 & [14.692,17.056) & 14.00 & 0.01 & 0.94 & 14.00 & 0.94 \\ 
-    2 & [17.056,19.421) & 32.00 & 0.02 & 2.14 & 46.00 & 3.08 \\ 
-    3 & [19.421,21.785) & 95.00 & 0.06 & 6.36 & 141.00 & 9.44 \\ 
-    4 & [21.785,24.15) & 163.00 & 0.11 & 10.91 & 304.00 & 20.35 \\ 
-    5 & [24.15,26.514) & 211.00 & 0.14 & 14.12 & 515.00 & 34.47 \\ 
-    6 & [26.514,28.879) & 263.00 & 0.18 & 17.60 & 778.00 & 52.07 \\ 
-    7 & [28.879,31.244) & 247.00 & 0.17 & 16.53 & 1025.00 & 68.61 \\ 
-    8 & [31.244,33.608) & 206.00 & 0.14 & 13.79 & 1231.00 & 82.40 \\ 
-    9 & [33.608,35.973) & 146.00 & 0.10 & 9.77 & 1377.00 & 92.17 \\ 
-    10 & [35.973,38.337) & 85.00 & 0.06 & 5.69 & 1462.00 & 97.86 \\ 
-    11 & [38.337,40.702) & 22.00 & 0.01 & 1.47 & 1484.00 & 99.33 \\ 
-    12 & [40.702,43.066) & 10.00 & 0.01 & 0.67 & 1494.00 & 100.00 \\ 
+& [14.692,17.056) & 14.00 & 0.01 & 0.94 & 14.00 & 0.94 \\ 
+  & [17.056,19.421) & 32.00 & 0.02 & 2.14 & 46.00 & 3.08 \\ 
+  & [19.421,21.785) & 95.00 & 0.06 & 6.36 & 141.00 & 9.44 \\ 
+  & [21.785,24.15) & 163.00 & 0.11 & 10.91 & 304.00 & 20.35 \\ 
+  & [24.15,26.514) & 211.00 & 0.14 & 14.12 & 515.00 & 34.47 \\ 
+  & [26.514,28.879) & 263.00 & 0.18 & 17.60 & 778.00 & 52.07 \\ 
+  & [28.879,31.244) & 247.00 & 0.17 & 16.53 & 1025.00 & 68.61 \\ 
+  & [31.244,33.608) & 206.00 & 0.14 & 13.79 & 1231.00 & 82.40 \\ 
+  & [33.608,35.973) & 146.00 & 0.10 & 9.77 & 1377.00 & 92.17 \\ 
+    & [35.973,38.337) & 85.00 & 0.06 & 5.69 & 1462.00 & 97.86 \\ 
+    & [38.337,40.702) & 22.00 & 0.01 & 1.47 & 1484.00 & 99.33 \\ 
+    & [40.702,43.066) & 10.00 & 0.01 & 0.67 & 1494.00 & 100.00 \\ 
      \bottomrule
   \end{tabular}
 \end{table}
@@ -196,16 +190,16 @@
     \toprule
    & Class limits & f & rf & rf(\%) & cf & cf(\%) \\ 
     \midrule
-  1 & [16.424,19.043) & 12.00 & 0.03 & 3.17 & 12.00 & 3.17 \\ 
-    2 & [19.043,21.662) & 25.00 & 0.07 & 6.61 & 37.00 & 9.79 \\ 
-    3 & [21.662,24.28) & 41.00 & 0.11 & 10.85 & 78.00 & 20.63 \\ 
-    4 & [24.28,26.899) & 62.00 & 0.16 & 16.40 & 140.00 & 37.04 \\ 
-    5 & [26.899,29.518) & 62.00 & 0.16 & 16.40 & 202.00 & 53.44 \\ 
-    6 & [29.518,32.137) & 76.00 & 0.20 & 20.11 & 278.00 & 73.54 \\ 
-    7 & [32.137,34.756) & 46.00 & 0.12 & 12.17 & 324.00 & 85.71 \\ 
-    8 & [34.756,37.374) & 35.00 & 0.09 & 9.26 & 359.00 & 94.97 \\ 
-    9 & [37.374,39.993) & 16.00 & 0.04 & 4.23 & 375.00 & 99.21 \\ 
-    10 & [39.993,42.612) & 3.00 & 0.01 & 0.79 & 378.00 & 100.00 \\ 
+& [16.424,19.043) & 12.00 & 0.03 & 3.17 & 12.00 & 3.17 \\ 
+  & [19.043,21.662) & 25.00 & 0.07 & 6.61 & 37.00 & 9.79 \\ 
+  & [21.662,24.28) & 41.00 & 0.11 & 10.85 & 78.00 & 20.63 \\ 
+  & [24.28,26.899) & 62.00 & 0.16 & 16.40 & 140.00 & 37.04 \\ 
+  & [26.899,29.518) & 62.00 & 0.16 & 16.40 & 202.00 & 53.44 \\ 
+  & [29.518,32.137) & 76.00 & 0.20 & 20.11 & 278.00 & 73.54 \\ 
+  & [32.137,34.756) & 46.00 & 0.12 & 12.17 & 324.00 & 85.71 \\ 
+  & [34.756,37.374) & 35.00 & 0.09 & 9.26 & 359.00 & 94.97 \\ 
+  & [37.374,39.993) & 16.00 & 0.04 & 4.23 & 375.00 & 99.21 \\ 
+    & [39.993,42.612) & 3.00 & 0.01 & 0.79 & 378.00 & 100.00 \\ 
      \bottomrule
   \end{tabular}
 \end{table}
@@ -217,14 +211,12 @@
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
 
 {\centering \includegraphics[width=.4\linewidth]{figure/minimal-Histograma-Poligono-Masc-1} 
-\includegraphics[width=.4\linewidth]{figure/minimal-Histograma-Poligono-Masc-2} 
-
+\includegraphics[width=.4\linewidth]{figure/minimal-Histograma-Poligono-Masc-2}
+\caption{Histograma e polígono de frequência acumulada de Y1 (un) (sexo masculino), UESC/BA - 2021.}
 }
 
 
 \end{knitrout}
-\caption{Histograma e polígono de frequência acumulada de Y1 (un) (sexo masculino), UESC/BA - 2021.
-}
 \end{figure}
 
 \begin{figure}[!h]
@@ -233,14 +225,11 @@
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
 
 {\centering \includegraphics[width=.4\linewidth]{figure/minimal-Histograma-Poligono-Fem-1} 
-\includegraphics[width=.4\linewidth]{figure/minimal-Histograma-Poligono-Fem-2} 
-
+\includegraphics[width=.4\linewidth]{figure/minimal-Histograma-Poligono-Fem-2} \caption{Histograma e polígono de frequência acumulada de Y1 (un) (sexo feminino), UESC/BA - 2021.}
 }
 
 
 \end{knitrout}
-\caption{Histograma e polígono de frequência acumulada de Y1 (un) (sexo feminino), UESC/BA - 2021.
-}
 \end{figure}
 \pagebreak
 
@@ -258,7 +247,7 @@
   \caption{Medidas de tendêcia central (sexo masculino), UESC/BA - 2021}
   \begin{tabular}{rlrrr} 
     \toprule
-    var & n & m & md \\ 
+    & n & m & md \\ 
     \midrule
   Y1 & 28.66 & 27.81 & 28.63 \\ 
   Y2 & 26.43 & 31.01 & 26.49 \\ 
@@ -273,7 +262,7 @@
   \caption{Medidas de tendêcia central (sexo feminino), UESC/BA - 2021}
   \begin{tabular}{rlrrr}
     \toprule   
-    var & n & m & md \\ 
+    & n & m & md \\ 
     \midrule
   Y1 & 28.86 & 33.15 & 29.03 \\ 
   Y2 & 26.52 & 27.14 & 26.66 \\ 
@@ -320,15 +309,12 @@ Y2 & 20.00 & 22.10 & 23.77 & 25.26 & 26.49 & 27.71 & 29.12 & 30.79 & 32.64 \\ \h
    &       &       &       &       &       &       &       &       &      
 \end{tabular}
  \end{table}
+\clearpage
 %-----------------------decis-feminina-----------------------------------
 
 \begin{table}[!ht]
   \centering
   \caption{Decis dos usúarios (sexo Feminino), UESC/BA - 2021}
-  \begin{tabular}{rrr}
-  \toprule
- & Y1 & Y2 \\ 
-  \midrule
 \begin{tabular}{llllllllll}
 \hline
    & 10\%  & 20\%  & 30\%  & 40\%  & 50\%  & 60\%  & 70\%  & 80\%  & 90\%  \\ \hline
@@ -336,15 +322,10 @@ Y1 & 22.08 & 24.23 & 25.69 & 27.60 & 29.03 & 30.30 & 31.69 & 33.08 & 35.84 \\
 Y2 & 19.27 & 22.51 & 24.06 & 25.49 & 26.66 & 28.02 & 29.21 & 31.11 & 35.27 \\ \hline
    &       &       &       &       &       &       &       &       &      
 \end{tabular}
-   \bottomrule
-\end{tabular} 
 \end{table}
 
-\textbf{2.1.3 (0.5) Dispersão}
-
-
-
 %---------------------------Dispersão_masculino---------------------------
+\textbf{2.1.3 (0.5) Dispersão}
 \begin{table}[!ht]
   \centering
   \caption{Dispersão dos usuários (sexo masculino), UESC/BA - 2020}
@@ -352,8 +333,8 @@ Y2 & 19.27 & 22.51 & 24.06 & 25.49 & 26.66 & 28.02 & 29.21 & 31.11 & 35.27 \\ \h
   \toprule
  & a.t & variância & d.padrão & c.v \\ 
   \midrule
-1 & 27.80 & 25.56 & 5.06 & 17.64 \\ 
-  2 & 26.96 & 23.34 & 4.83 & 18.27 \\ 
+Y1 & 27.80 & 25.56 & 5.06 & 17.64 \\ 
+  Y2 & 26.96 & 23.34 & 4.83 & 18.27 \\ 
    \bottomrule
 \end{tabular} 
 \end{table}
@@ -366,32 +347,30 @@ Y2 & 19.27 & 22.51 & 24.06 & 25.49 & 26.66 & 28.02 & 29.21 & 31.11 & 35.27 \\ \h
   \toprule
  & a.t & variância & d.padrão & c.v \\ 
   \midrule
-1 & 25.60 & 26.79 & 5.18 & 17.94 \\ 
-  2 & 25.66 & 25.53 & 5.05 & 19.05 \\ 
+Y1 & 25.60 & 26.79 & 5.18 & 17.94 \\ 
+  Y2 & 25.66 & 25.53 & 5.05 & 19.05 \\ 
    \bottomrule
 \end{tabular} 
 \end{table}
+ \clearpage
 %-----------------------------------------------------------------------------
 \subsection{AED: Medidas determinadas a partir de apresentações tabulares (1.5)} 
 
  \begin{table}[!ht]
   \centering
   \caption{Tabela de distribuição de frequência recosntruída de publicação, UESC/BA - 2020}
-   \begin{tabular}{rlrrr}
+\begin{tabular}{rlrrrrr}
   \toprule
-  \begin{tabular}{rlrrrrr}
-  \toprule
- & Class limits & f & rf & rf($\backslash$\%) & cf & cf($\backslash$\%) \\ 
-  \midrule
-1 & [10,20) & 9.00 & 0.04 & 3.90 & 9.00 & 3.90 \\ 
-  2 & [20,30) & 18.00 & 0.08 & 7.79 & 27.00 & 11.69 \\ 
-  3 & [30,40) & 28.00 & 0.12 & 12.12 & 55.00 & 23.81 \\ 
-  4 & [40,50) & 39.00 & 0.17 & 16.88 & 94.00 & 40.69 \\ 
-  5 & [50,60) & 47.00 & 0.20 & 20.35 & 141.00 & 61.04 \\ 
-  6 & [60,70) & 39.00 & 0.17 & 16.88 & 180.00 & 77.92 \\ 
-  7 & [70,80) & 27.00 & 0.12 & 11.69 & 207.00 & 89.61 \\ 
-  8 & [80,90) & 17.00 & 0.07 & 7.36 & 224.00 & 96.97 \\ 
-  9 & [90,100) & 7.00 & 0.03 & 3.03 & 231.00 & 100.00 \\ 
+ & Class limits & f & rf & rf(\%) & cf & cf(\%) \\ 
+  \midrule& [10,20) & 9.00 & 0.04 & 3.90 & 9.00 & 3.90 \\ 
+& [20,30) & 18.00 & 0.08 & 7.79 & 27.00 & 11.69 \\ 
+& [30,40) & 28.00 & 0.12 & 12.12 & 55.00 & 23.81 \\ 
+& [40,50) & 39.00 & 0.17 & 16.88 & 94.00 & 40.69 \\ 
+& [50,60) & 47.00 & 0.20 & 20.35 & 141.00 & 61.04 \\ 
+& [60,70) & 39.00 & 0.17 & 16.88 & 180.00 & 77.92 \\ 
+& [70,80) & 27.00 & 0.12 & 11.69 & 207.00 & 89.61 \\ 
+& [80,90) & 17.00 & 0.07 & 7.36 & 224.00 & 96.97 \\ 
+& [90,100) & 7.00 & 0.03 & 3.03 & 231.00 & 100.00 \\  
    \bottomrule
 \end{tabular}
   \end{table}
@@ -403,9 +382,9 @@ Y2 & 19.27 & 22.51 & 24.06 & 25.49 & 26.66 & 28.02 & 29.21 & 31.11 & 35.27 \\ \h
   \caption{Medidas de tendêcia central, UESC/BA - 2021}
   \begin{tabular}{rlrrr}
   \toprule
- & var & n & m & md \\ 
+ & n & m & md \\ 
   \midrule
- medidas & 54.44 & 55.00 & 54.57 \\ 
+ medida & 54.44 & 55.00 & 54.57 \\ 
    \bottomrule
 \end{tabular}
 \end{table}
@@ -421,7 +400,7 @@ Y2 & 19.27 & 22.51 & 24.06 & 25.49 & 26.66 & 28.02 & 29.21 & 31.11 & 35.27 \\ \h
   \hline
    & 10\% & 20\% & 30\% \\ 
   \hline
-  medidas & 40.71 & 54.57 & 68.27 \\ 
+  medida & 40.71 & 54.57 & 68.27 \\ 
    \hline
 \end{tabular}
 \end{table}
@@ -433,11 +412,11 @@ Y2 & 19.27 & 22.51 & 24.06 & 25.49 & 26.66 & 28.02 & 29.21 & 31.11 & 35.27 \\ \h
   \hline
  & 10\% & 20\% & 30\% & 40\% & 50\% & 60\% & 70\% & 80\% & 90\% \\ 
   \hline
-medidas & 27.83 & 36.86 & 43.67 & 49.59 & 54.57 & 59.49 & 65.31 & 71.78 & 80.53 \\ 
+medida & 27.83 & 36.86 & 43.67 & 49.59 & 54.57 & 59.49 & 65.31 & 71.78 & 80.53 \\ 
    \hline
 \end{tabular}
 \end{table}
-
+\clearpage
 \subsection{(0.5) Dispersão}
 
 %---------------------------Dispersão---------------------------
@@ -449,10 +428,11 @@ medidas & 27.83 & 36.86 & 43.67 & 49.59 & 54.57 & 59.49 & 65.31 & 71.78 & 80.53 
     \hline
    & variância & d.padrão & c.v \\ 
     \hline
-  1 & 377.51 & 19.43 & 2.80 \\
+  Y1 & 377.51 & 19.43 & 2.80 \\
      \hline
   \end{tabular}
 \end{table}
+ \clearpage
  
  \section{AED: Medidas estatísticas de associação e regressão linear (4.0)}
  \subsection{(1.5) Associação}
@@ -513,6 +493,7 @@ medidas & 27.83 & 36.86 & 43.67 & 49.59 & 54.57 & 59.49 & 65.31 & 71.78 & 80.53 
   \end{tabular}
 \end{table}
 %---------------------------diagrama_dispersão---------------------------
+ \clearpage
   \textbf{3.1.2 (0.5) Diagrama de dispersão dos dados}
 \begin{figure}[!h]
 \label{figura:Diagrama de dispersão}
@@ -531,6 +512,8 @@ medidas & 27.83 & 36.86 & 43.67 & 49.59 & 54.57 & 59.49 & 65.31 & 71.78 & 80.53 
 
   
   \textbf{3.1.3 (0.5) Comparação de estudos semelhantes}
+  
+   Ao procurar entender como uma variável se comporta enquanto outra está variando, a correlação linear - medida de associação que não é influenciada pela unidade de medida das variáveis nem pelo tamanho da amostra- é a mais recomendada para comparar as associações entre as variáveis tanto no estudo que utiliza unidades (un) quanto no que utiliza unidades (100 * un).
 
 \subsection{3.2 Regressão linear (2.5)}
 
@@ -565,30 +548,49 @@ medidas & 27.83 & 36.86 & 43.67 & 49.59 & 54.57 & 59.49 & 65.31 & 71.78 & 80.53 
 \end{tabular}
 \end{table}
 
+\clearpage
   \textbf{3.2.2 (0.5) Diagrama de dispersão com modelos ajustados}
   
 \begin{figure}[!h]
 \label{figura:Diagrama de dispersão_ajustado}
 \begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{verbatim}
-## integer(0)
-## integer(0)
-\end{verbatim}
-\end{kframe}
-
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
 {\centering \includegraphics[width=.4\linewidth]{figure/minimal-Diagrama_de_dispersão_ajustado-1} 
 \includegraphics[width=.4\linewidth]{figure/minimal-Diagrama_de_dispersão_ajustado-2} 
-
 }
-
-
 \end{knitrout}
 \caption{Diagrama de dispersão dos dados, modelos ajustados e respectivos r², UESC/BA - 2021.}
-\end{figure}
+\end{figure} 
+
   \textbf{3.2.3 (0.5) Qual modelo melhor explica o fenômeno em estudo?}
   
+  A priori conseguimos observar através da analise dos gráficos maior proximidade dos pontos da curva do polinômio de segundo grau. Ademais O modelo linear de 2º grau possui R² = 0.9744, maior que o R² do modelo linear de 1º grau. Como o R² é uma medida de ajuste de um modelo estatístico linear generalizado - como a regressão linear simples ou múltipla- aos valores observados de uma variável aleatória ele estabelece uma relação de proporcionalidade com o nível de ajuste á amostra. Dessa forma, o modelo linear de 2º grau explica de forma mais clara o fenômeno estudado.
+  
   \textbf{3.2.4 (0.5) Critérios de ajustamento e escolha de modelos}
-           
+  
+        Segundo Levine (2014), o coeficiente de determinação múltipla é igual à soma dos quadrados da regressão (SQReg) dividida pela soma total dos quadrados. Além disso, o R² é o índice que indica a porcentagem de explicação da variável dependente em função das variáveis independentes com variação de 1\% a 100\% e que depende do número de observações. Haja vista a possibilidade de torna-lo maior pela adição de números suficiente em termos de modelo, o mesmo deve ser utilizado com precaução.
+        Dessa forma, infere-se que os coeficientes de determinação são comparáveis, levando em consideração que um valor grande de R² pode ser fruto de uma amplitude x muito grande e um valor pequeno de R² podera ser fruto de uma amplitude x muito pequena.
+\clearpage        
 \subsection{ Contextualização (1.0))}
+        O artigo selecionado busca analisar a morbimortalidade pela Covid-19 segundo raça, cor e etnia em países como Brasil e Estados Unidos através de dados divulgados tais como; boletins epidemiológicos divulgados pelo Ministério da Saúde, resultados parciais da Pesquisa Nacional por Amostragem de Domicílio (PNAD) COVID-19 realizada pelo IBGE no Brasil e estudos na área da saúde sobre os impactos da pandemia nos Estados Unidos, sob a perspectiva de raça/cor/etnia.
+        
+        Dos dados constituintes do estudo descritivo e exploratório temos:
+        
+            - 21 boletins epidémiologicos divulgados pelo Ministério da saúde que investigam aspectos da produção e divulgação dos dados desagregados por
+            raça/cor ao longo do período de janeiro a julho de 2020.
+            
+            - A Pesquisa Nacional por Amostra de Domicílios, PNAD-COVID-1919 a qual estima o número de pessoas com sintomas referidos associados à síndrome gripal. A coleta desta pesquisa teve início em 4 de maio de 2020 e entrevistou por telefone 48 mil domicílios por semana, totalizando 193 mil domicílios por mês.
+        Posto que os dados de hospitalizações de SRAG por COVID-19 aparecem somente em gráficos com porcentagens e com uma nota de rodapé explicando que 14.698 casos foram excluídos da análise devido ao campo raça/cor ter sido registrado como ignorado. A partir dos gráficos obsevamos que 43,1\% dos óbitos ocorreram entre pessoas de raça/cor branca, seguido da raça/cor parda (47,3\%) e preta (7,5\%). Dentre estes óbitos, 4.425 tiveram a raça/cor ignorada e não foram incluídos na análise.
+        
+        Ademais, o artigo possui tanto apresentações graficas como uma apresentação tabular, nas quais  fica evidente a divergência da norma verificada no ponto “.” ao fim do título, o que não deve haver. Em contra partida as apresentações gráficas presentes possuem data de referência, fonte e local obrigatório.
+        
+        Não obstante, o estudo do coeficiente de variação, das frequências absolutas e relativas apresentados na Tabela 1, evidenciam o maior acometimento da população negra pela COVID-19 e maior utilização do SUS por esta população para o cuidado à saúde.
+        
+        
+\subsection{Referências}
+
+LEVINE, D. M. et al.. Estatística: teoria e aplicações usando o Microsoft Excel em português.
+6.ed. Rio de Janeiro: LTC, 2014
+
+MORBIMORTALIDADE pela Covid-19 segundo raça/cor/etnia: a experiência do Brasil e dos Estados Unidos. Saúde em deabate, [S. l.], p. 0-22, 23 ago. 2021.
 \end{document}
